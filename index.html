@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <title>Assignment</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a class='table' href="table.html">Table</a>
+            <a class='acc' href="ques.html">Questions</a>
+        </nav>
+    </header>
+    <section class="data">
+        <form method="post" class="main-form">
+            <div>
+                <label for="fname" >First Name</label>
+                <input type="text" name="firstname"  placeholder="please enter your name" required>
+            </div>
+            <div>
+                <label for="birthday" >Date of birth:</label>
+                <input type="date" name="birthday" required >
+            </div>
+            <div>
+                <label for="country" >Email</label>
+                <input type="email" name="Email"  placeholder="please enter your email" required>
+            </div>
+            
+            <div>
+                <label for="gender" class="required">Select Gender</label>
+                <input type="radio" id="Male" name="gender" value="Male">
+                <label for="Male">Male</label>
+                <input type="radio" id="Female" name="gender" value="Female">
+                <label for="Female">Female</label>
+                <input type="radio" id="others" name="gender" value="others">
+                <label for="Female">others</label><br><br>
+            </div>
+            
+           
+            <div>
+                        <label>Choose Your Class:</label>
+                        <select style="background-color: white;color: black;width: 100%;" id="year" name="year" style="width: 100%;">
+                            <option value="">Choose your class</option>
+                            <option value="1st ">11th</option>
+                            <option value="2nd">12th</option>
+                            <option value="3rd">9th</option>
+                            <option value="4th">10th</option>
+                        </select>
+            </div>
+            <div>
+                <label for="interests" class="required">Interests/Hobbies:</label>
+               
+                <input type="checkbox" name="interest2" class="requires" value="Cooking"> Cooking
+                <input type="checkbox" name="interest3" class="requires" value="Dancing"> Dancing
+                <input type="checkbox" name="interest4" class="requires" value="Singing"> Singing
+                <input type="checkbox" name="interest5" class="requires" value="Coding"> Coding
+            </div>
+
+            <input type="submit" value="Submit" role="Button" tabindex="0" id="btn">
+            <input type="reset" value="Reset" role="button" tabindex="0" id="reset">
+
+
+        </form>
+        <footer>
+            <div style="height:40px;" class="main-footer">
+                <h3 style="margin-top: 10px;">&copy Copyright All rights reserved by Janak</h3>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            $(':input[type="submit"]').prop('disabled', true);
+            $('input[type="email"]').keyup(function () {
+                if ($(this).val == '') {
+                    window.alert("Please complete all required fields");
+                }
+                else {
+                    $(':input[type="submit"]').prop('disabled', false);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

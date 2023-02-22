@@ -1,0 +1,343 @@
+
+.navbar{
+    z-index: 2;
+      position: fixed;
+      top:0;
+      left:0;
+      background-color: black;
+      width:100vw;
+      height: 40px;
+      padding:5px;
+  }
+  
+  .navbar a{
+      float:left;
+      text-align:center;
+      font-size: large;
+      font-weight: bold;
+      align-items: center;
+      color:white;
+      padding: 14px 15px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+  .navbar  a:hover,a:focus,a:visited{
+      border:1px dotted;
+      
+      color:white;
+      margin-bottom: 2px;
+      font-weight: bold;    
+  }
+   input:hover, button:hover, select:hover,
+   input:focus, button:focus, select:focus {
+          
+          scale: 1.02;
+  }
+  .required:after {
+    content:" *";
+    color: red;
+  }
+  input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type=email], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type=date], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  
+  #btn:disabled{
+      border: 1px solid black;
+      background-color:black;
+      color: white;
+    }
+  #btn, select{
+      width: 20%;
+      background-color: black;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    #btn:hover,.btn:focus{
+      font-weight: bold;
+      color:black;
+      background-color: white;
+    }
+    .popup {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      background: rgba(0, 0, 0, 0.58);
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+    
+    
+    .popup-content {
+      width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+      margin-top: 100px;
+      border-radius: 3px;
+      background: #fff;
+      position: relative;
+    }
+    input{
+      border:none;
+      border-bottom:1px solid black;
+    }
+    
+    
+    .closeBtn {
+      position: absolute;
+      top: 5px;
+      right: 12px;
+      font-size: 17px;
+      color: #7c7575;
+      text-decoration: none;
+    }
+    input[type=reset], select {
+      width: 20%;
+      background-color: black;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    } 
+    input[type=reset]:hover,button[type=reset]:focus{
+      font-weight: bold;
+      color:black;
+      background-color: white;
+    }
+    .main-form{
+    
+      margin:20px;
+      padding:15px 15px;
+    }
+     
+    input[type=checkbox]{
+      padding: 20px 15px;
+      margin: 15px 0;
+      width:30px;
+      
+    }
+    section {
+      position:fixed;
+      top:50px;
+      left:0;
+      width:100vw;
+      
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    .main-footer{
+      
+      background-color:black;
+      color: white;
+      width:100vw;
+      height: 40px;
+      padding:5px;
+      text-align:center;
+      font-size: larger;
+      font-weight: bolder;   
+  }
+  
+  tables {
+    position: relative;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 5%;
+  }
+  tables:focus, tables:hover {
+    outline-style: solid;
+    outline-color: black;
+  }
+  
+  
+  
+  td,
+  th {
+    padding: 2.25em;
+  }
+  
+  thead th {
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 0;
+    background:black;
+    color: #FFF;
+  }
+  
+  thead th:first-child {
+    left: 0;
+    z-index: 1;
+  }
+  
+  tbody th {
+    position: -webkit-sticky; 
+    position: sticky;
+    left: 0;
+    background: #FFF;
+    border-right: 1px solid #CCC;
+  }
+  
+  tbody td{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;   
+  }
+  
+  tables > tr:hover,
+  tbody tr:hover {
+  background: #bdf;
+  }
+  
+  div #popup
+  {
+      display: flex;
+      justify-content: center;
+      width: 60%;
+      background-color: black;
+      color: white;
+      padding: 14px 20px;
+      /*margin: 8px 0;*/
+      margin-left : 250px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;;
+  }
+  div #popup:hover
+  {
+    font-weight: bold;
+    color:black;
+    background-color: white;
+  }
+  
+  #telephone
+  {
+    color: #265301;
+    font-weight: bold;
+  }
+  
+  #telephone:focus-within, #telephone:hover
+  {
+    color: black;
+    font-weight: bold;
+    outline-style: dotted;
+    outline-color: black;
+    outline-width: 1px;
+    outline-offset: 1px;
+  
+  
+  }
+  
+  button:focus, button:hover  {
+    outline: 2px solid black;
+  }
+  
+  #close{
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+    font-size: 30px;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5rem;
+    margin-top: 0;
+    line-height: 1;
+    width: 20px;
+  }
+  
+  #close:focus  {
+    outline: 2px solid black;
+    padding:0 0 0 0;
+  }
+  
+  ul {
+    list-style:none;
+  } 
+  
+  
+  #accordion button:focus{
+    border-radius:0px;
+    outline:none;
+  }
+  #accordion button{
+      outline: none;
+      background-color:black;
+      padding: 10px;   
+      border:none;
+      border-bottom: 1px solid black; 
+      color: white;
+      width: 100%;
+      text-align:left;
+      font-size:16px;
+      border-radius:0px;
+  }
+  #accordion li{
+     border: 1px solid DarkSlateGray;
+    border-bottom: none;
+  
+  }
+  .acc-item-content{
+    padding: 0px 10px;
+  }
+  .acc-item:last-child {
+    border-bottom: 1px solid DarkSlateGray;
+  }
+  #accordion button::after{
+    content: "\002B";
+    font-weight: 900;
+    font-size: 15px;
+    float:right;
+  }
+  
+  #accordion{
+    width:80%;
+    max-width: 800px;
+    min-width: 275px;
+    margin:auto;
+  }
+  .acc-item-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  #accordion button.active:after{
+      content: "\2212";
+    font-weight: 900;
+    font-size: 22px;
+    float:right;
+  }

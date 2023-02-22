@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      
+        <a href="index.html">Home</a>
+        <a class='tables' href="table.html">Tables</a>
+        <a class='acc' href="ques.html">Questions</a>
+    </nav>
+</header>
+    <div>
+        <table style="width: 100vw;">
+            <thead>
+                <tr>
+                    <th scope="col">Student Name</th>
+                    <th scope="col">DOB</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Class</th>
+                    <th scope="col">Roll no.</th>
+                    <th scope="col">Home Town</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Mohit</th>
+                    <td>11-04-1999</td>
+                    <td>Male</td>
+                    <td>10th</td>
+                    <td>121</td>
+                    <td>Punjab</td>
+
+                    
+                </tr>
+                <tr>
+                    <th scope="row">Krishan</th>
+                    <td>25-11-2002</td>
+                    <td>Male</td>
+                    <td>9th</td>
+                    <td>23</td>
+                    <td>Punjab</td>
+                    
+                </tr>
+                <tr>
+                    <th scope="row">Mridul</th>
+                    <td>30-06-2011</td>
+                    <td>Female</td>
+                    <td>12th</td>
+                    <td>59</td>
+                    <td>Himachal</td>
+                </tr>
+                <tr>
+                    <th scope="row">Srikant</th>
+                    <td>09-05-2002</td>
+                    <td>Male</td>
+                    <td>7th</td>
+                    <td>100</td>
+                    <td>Sikkim</td>
+                    
+                </tr>
+                <tr>
+                    <th scope="row">neha</th>
+                    <td>02-03-2002</td>
+                    <td>Female</td>
+                    <td>11th</td>
+                    <td>809</td>
+                    <td>Assam</td>
+                  
+                </tr>
+
+            </tbody>   
+        </table>
+    </div>
+
+
+    <!-- pop-up dialog box, containing a form -->
+<dialog id="favDialog">
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, exercitationem? </p>
+    <p>lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolores quae?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquid reprehenderit harum.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, voluptates sit.</p>
+    <p id="telephone">+91 96787689766</p>
+        <button id="close" aria-label="close">&times;</button>
+</div>
+  </dialog>
+  
+  <div>
+    <button style="margin-top: 20px;" id="popup">Contact Us</button>
+  </div>
+  <footer>
+    <div style="margin-top: 5%;" class="main-footer">
+        <h3 style="margin-top: 10px;">&copy Copyright All rights reserved by Janak</h3>
+    </div>
+</footer>
+</body>
+<script>
+    const updateButton = document.getElementById("popup");
+const cancelButton = document.getElementById("close");
+const dialog = document.getElementById("favDialog");
+dialog.returnValue = "favAnimal";
+
+function openCheck(dialog) {
+  if (dialog.open) {
+    console.log("Dialog open");
+  } else {
+    console.log("Dialog closed");
+  }
+}
+
+// Update button opens a modal dialog
+updateButton.addEventListener("click", () => {
+  dialog.showModal();
+  openCheck(dialog);
+});
+
+// Form cancel button closes the dialog box
+cancelButton.addEventListener("click", () => {
+  dialog.close("animalNotChosen");
+  openCheck(dialog);
+});
+</script>
+</html>
